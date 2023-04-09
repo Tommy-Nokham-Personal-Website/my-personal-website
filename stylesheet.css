@@ -1,3 +1,63 @@
-/* Have intro center using format: img, name, skill set */
-/* Mission statement following */
-/* Qouted message in fancy font*/
+body {
+  background-image: url(https://getwallpapers.com/wallpaper/full/5/a/e/74906.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+}
+.main_container {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  height: 100px;
+  margin: 5px 0px;
+  padding-top: 5px;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:active {
+  text-emphasis: bold;
+}
+
+
+
+.profile {
+  justify-items: center;
+  width: 200px;
+  background-color: rgba(100, 10, 136, .5);
+}
+
+#profile_photo {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.content {
+  margin: 0px 10px;
+  color: rgb(27, 105, 27);
+  font-weight: bolder;
+  text-shadow: 1px 1px rgb(2, 2, 2);
+}
