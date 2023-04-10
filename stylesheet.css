@@ -3,6 +3,8 @@ body {
   background-attachment: fixed;
   background-size: cover;
   color: rgb(255, 255, 255);
+  margin: 0;
+  min-height: 100vh;
 }
 
 h1,
@@ -13,24 +15,26 @@ p {
 .main_container {
   display: flex;
   align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
 .menu {
   display: flex;
   justify-content: center;
+  text-align: center;
 
 }
 
-.menu ul {
+.menu ul, .content ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 10vh 0;
 }
 
 .menu li {
-  height: 100px;
-  margin: 5px 0px;
-  padding-top: 5px;
+  height: 8vh;
+  font-size: 3.5vw;
 }
 
 a:link, a:visited {
@@ -38,26 +42,64 @@ a:link, a:visited {
   color: white;
 }
 
-a:active {
-  text-emphasis: bold;
+.page:active, .page:hover, .social:active, .social:hover {
+  border: .5vh;
+  border-style:groove;
+  border-color: black;
 }
 
 
 
 .profile {
+  display: flex;
+  flex-direction: column;
   justify-items: center;
-  width: 200px;
+  align-items: center;
+  font-size: 2vw;
+  min-width: 20vw;
+  min-height: 100vh;
   background-color: rgba(100, 10, 136, .5);
 }
 
-#profile_photo {
-  width: 150px;
+.profile h1, #profilePhoto {
+  width: 20vw;
+}
+
+#profilePhoto{
   border-radius: 50%;
 }
 
+.social{
+  width: 8vw;
+  height: 5vh;
+}
+
 .content {
-  margin: 0px 10px;
-  color: rgb(27, 105, 27);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 5vh;
+  height: 60vh;
   font-weight: bolder;
   text-shadow: 1px 1px rgb(2, 2, 2);
+}
+
+.content li {
+  text-shadow: .1vw .1vh rgb(0, 0, 0);
+}
+
+.content li img {
+  width: 3vw;
+  height: 2vh;
+}
+
+#mission {
+  font-size: 3vh;
+  color: whitesmoke;
+  margin-top: 1vh;
+}
+#quote {
+  font-size: 2.5vh;
+  color: rgb(27, 105, 27);
 }
