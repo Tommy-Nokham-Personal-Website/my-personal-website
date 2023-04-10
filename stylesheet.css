@@ -103,3 +103,22 @@ a:link, a:visited {
   font-size: 2.5vh;
   color: rgb(27, 105, 27);
 }
+
+.aboutMe.content {
+  min-height: 100vh;
+  justify-content: space-around;
+
+}
+
+.aboutMe.content {
+  text-shadow: 0.2vh 0.2vw black;
+}
+.aboutMe.content h1, .aboutMe.content h2{
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+
+.aboutMe.content ul {
+  padding: 0;
+  text-align: center;
+}
